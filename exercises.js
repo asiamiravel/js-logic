@@ -281,9 +281,17 @@ console.log(graduation(20,true))
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
-function moneyTrain(speed){
 
+function moneyTrain(speed){
+  if(speed < 50){
+    return "You are riding Honolulu's Rail.";
+  }else if(speed < 100){
+    return "You are riding an Amtrak.";
+  }else{
+    return "Now you ballin' in the Shinkansen!";
+  }
 }
+console.log(moneyTrain(99));
 
 /*
  * #14
@@ -348,12 +356,19 @@ for (var i = 0; i<toyotaModels.length; i++){
  * "Player: 5"
 */
 
+for(var i = 1; i<=5; i++){
+  console.log("player ", i);
+}
+
 
 /* 
  * #16
  * Create a for loop that will iterate and console.log each item in the array below:
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
+  for(var i = 0; i<myFavFoods.length; i++){
+    console.log(myFavFoods[i]);
+  }
 
 
 /*
