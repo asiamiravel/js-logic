@@ -221,8 +221,14 @@ console.log(dirty30(5, 7, 9))
  * Console.log your result.
 */ 
 
-
-
+function evenStevens(num){
+  if(num%2 === 0) // <---- EVEN NUMBERS/ === 1 FOR ODD #'S
+  {return true
+}else{
+  return false
+}
+}
+console.log(evenStevens(7))
 
 /*
  * #11
